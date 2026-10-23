@@ -1,0 +1,23 @@
+name: momentum
+description: A local-first production-grade startup app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  drift: ^2.26.0          # Core Drift ORM database engine
+  drift_flutter: ^0.2.4   # Platform-optimized SQLite connector for Flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  drift_dev: ^2.26.0      # Code generator for parsing table schemas
+  build_runner: ^2.4.15   # Orchestrates the file builder execution
+
+flutter:
+  uses-material-design: true
